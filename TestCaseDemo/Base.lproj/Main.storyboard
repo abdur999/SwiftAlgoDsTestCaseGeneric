@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kit-0A-BM9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestCaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9u-sa-V7I">
+                                <rect key="frame" x="115" y="445" width="184" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="JoT-3o-tMS"/>
+                                    <constraint firstAttribute="height" constant="60" id="jiq-G5-URL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Move To Collection"/>
+                                <connections>
+                                    <action selector="moveToCollection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SkC-zY-EsQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt8-cN-R7B">
+                                <rect key="frame" x="115" y="565" width="184" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="CcO-YU-31u"/>
+                                    <constraint firstAttribute="width" constant="184" id="alE-vO-gvG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Memory Test"/>
+                                <connections>
+                                    <action selector="memoryTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDX-Ry-5bM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q9u-sa-V7I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NOx-g4-iwb"/>
+                            <constraint firstItem="tt8-cN-R7B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U0t-tg-nFK"/>
+                            <constraint firstItem="tt8-cN-R7B" firstAttribute="top" secondItem="Q9u-sa-V7I" secondAttribute="bottom" constant="60" id="exv-Gx-B29"/>
+                            <constraint firstItem="Q9u-sa-V7I" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="m9b-bW-er5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2eK-ea-5e1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530.43478260869574" y="-5.3571428571428568"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8tc-Z6-Jww">
+            <objects>
+                <navigationController id="Kit-0A-BM9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U7l-ak-v6R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="efX-au-dQO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6A-yC-bzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1262" y="11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
